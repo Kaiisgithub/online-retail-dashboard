@@ -24,12 +24,10 @@ The raw "Online Retail II" dataset contained uncleaned transaction records with 
 
 ## Technical Implementation (DAX)
 ### 1. Total Revenue
-```Calculated the sum of line totals to handle row-level granularity rather than aggregate averages.```
-Total Revenue = SUM('Year 2010-2011'[Sales Amount])
+```Calculated the sum of line totals to handle row-level granularity rather than aggregate averages. Total Revenue = SUM('Year 2010-2011'[Sales Amount]) ```
 
 ### 2. Average Order Value (AOV)
-```Calculated the average spend per unique invoice to determine the true "basket size," providing a more accurate metric than simple average unit price.```
-Avg Order Value = DIVIDE([Total Revenue], DISTINCTCOUNT('Year 2010-2011'[Invoice]))
+```Calculated the average spend per unique invoice to determine the true "basket size," providing a more accurate metric than simple average unit price. Avg Order Value = DIVIDE([Total Revenue], DISTINCTCOUNT('Year 2010-2011'[Invoice])) ```
 
 
 ## Tech Stack

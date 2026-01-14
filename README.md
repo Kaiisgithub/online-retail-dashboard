@@ -24,10 +24,10 @@ The raw "Online Retail II" dataset contained uncleaned transaction records with 
 
 ## Technical Implementation (DAX)
 ### 1. Total Revenue
-    ```Total Revenue = SUM('Year 2010-2011'[Sales Amount]) ```
+    Total Revenue = SUM('Year 2010-2011'[Sales Amount])
 
 ### 2. Average Order Value (AOV)
-   ```Avg Order Value = DIVIDE([Total Revenue], DISTINCTCOUNT('Year 2010-2011'[Invoice])) ```
+   ```Avg Order Value = DIVIDE([Total Revenue], DISTINCTCOUNT('Year 2010-2011'[Invoice]))```
 
 ## Tech Stack
 * **Tool**: Microsoft Power BI Desktop
